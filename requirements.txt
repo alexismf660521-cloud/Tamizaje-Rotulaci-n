@@ -1,0 +1,4 @@
+1 streamlit
+2 pandas
+3 openpyxl
+4 python-docx
