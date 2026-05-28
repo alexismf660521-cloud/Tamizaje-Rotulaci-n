@@ -23,7 +23,11 @@ if archivo_1:
 
     usuario = st.selectbox("Seleccione 'Asignado a'", valores)
 
-    if st.button("Generar archivo"):
+    
+generar = st.button("Generar archivo")
+
+if archivo_1 is not None and generar:
+
 
         df_filtrado = df[
             (df["¿Seguimiento de CDC?"].str.upper() == "Y") &
@@ -72,7 +76,11 @@ st.header("2. Procesar archivo y generar rótulos")
 
 archivo_2 = st.file_uploader("Suba el archivo diligenciado", type=["xlsx"], key="archivo2")
 
-if archivo_2 and st.button("Procesar archivo"):
+
+procesar = st.button("Procesar archivo")
+
+if archivo_2 is not None and procesar:
+
 
     libro = openpyxl.load_workbook(archivo_2)
 
