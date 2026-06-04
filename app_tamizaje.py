@@ -153,6 +153,7 @@ if archivo_2 is not None and procesar:
             f"EMP: {fila.get('EMP','')}   Consecutivo: {fila.get('Consecutivo','')}",
             f"ID Empaque: {fila.get('ID Empaque','')}",
             f"Número de Caso: {fila.get('Caso_Numero','')}",
+            f"Muestra: {fila.get('Tipo de EMP','')}",
             f"NUC: {fila.get('Caso_Destino','')}"
         ]
 
